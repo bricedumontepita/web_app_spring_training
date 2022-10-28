@@ -23,6 +23,4 @@ public class ApplicationIdentifierFilter implements Filter {
 
         filterChain.doFilter(servletRequest, servletResponse);
     }
-
-
 }
