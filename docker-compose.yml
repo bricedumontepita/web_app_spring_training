@@ -1,7 +1,7 @@
 version: "3.9"
 services:
     todolist:
-        build : . # (1)
+        build : . # Utilise le fichier Dockerfile dans le même répertoire
         labels:
             - "traefik.http.routers.todolist.rule=PathPrefix(`/app`)"
             - "traefik.http.middlewares.todolist.stripPrefix.prefixes=/app"
